@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeSectionComponent } from './home-section/home-section.component';
 import { ResultadosComponent } from './resultados/resultados.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ResultadosComponent } from './resultados/resultados.component';
   imports: [
     BrowserModule.withServerTransition({appId: 'la-mega'}),
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
