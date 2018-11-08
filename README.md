@@ -14,6 +14,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 The changes required for the use of server side renderig are in the commit  `angular Universal` hash `ea02f54223a99a05fdc7d504aa4bba1f2c446d6f`
 
+Run  `npm run build:ssr && npm run serve:ssr` 
 
 ## Build
 

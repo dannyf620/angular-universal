@@ -1,0 +1,202 @@
+<div class="service-test" *ngIf="lista">
+  <div *ngFor="let item of lista">
+
+    {{item.body}}
+  </div>
+</div>
+
+<div class="row">
+
+  <video id="videoPlayer" class="video-js vjs-default-skin vjs-paragraph" poster="../../assets/images/radio.jpg"
+  preload="none" 
+    controls="controls" playsinline="playsinline">
+    <source src="https://live.rcnmundo.com/rcnlaradio.mp3" type="audio/mp3" />
+  </video>
+
+  <div class="region region-persistent-header">
+    <section id="block-headerblock" class="block block-antena2-blocks block-header-block clearfix">
+
+
+
+
+      <nav class="navbar navbar-default header-background" style="z-index: 20 !important;">
+        <div class="container-fluid">
+
+          <div class="navbar-header">
+
+            <button id="btn-mob-menu" type="button" class="navbar-toggle collapsed btn-sidebar" data-toggle="collapse"
+              data-target="#mobile-menu" aria-expanded="false">
+              <div class="nav-button">
+                <div class="hamburger-inner"></div>
+              </div>
+            </button>
+          
+          </div>
+
+
+          <div class="collapse navbar-collapse clearfix" id="mobile-menu">
+            <ul class="nav navbar-nav navigation-list">
+
+              <li class="nav-item hidden-xs" style="display: block;">
+                <a routerLink="/noticias" class="active">
+                  NOTICIAS
+                </a>
+              </li>
+              <li class="nav-item hidden-xs" style="display: block;">
+                <a routerLink="/resultados" >
+                  Resultados
+                </a>
+              </li>
+              <li class="nav-item hidden-xs" style="display: block;">
+                <a routerLink="/futbol" >
+                  Fútbol
+                </a>
+              </li>
+              <li class="nav-item hidden-xs" style="display: block;">
+                <a routerLink="/ciclismo" >
+                  Ciclismo
+                </a>
+              </li>
+              <li class="nav-item hidden-xs" style="display: block;">
+                <a routerLink="/beisbol" >
+                  Béisbol
+                </a>
+              </li>
+              <li class="nav-item hidden-xs" style="display: block;">
+                <a routerLink="/tenis" >
+                  Tenis
+                </a>
+              </li>
+              <li class="nav-item hidden-xs" style="display: block;">
+                <a routerLink="/motores" >
+                  Motores
+                </a>
+              </li>
+              <li class="nav-item hidden-xs" style="display: block;">
+                <a routerLink="/baloncesto">
+                  Baloncesto
+                </a>
+              </li>
+              <li class="nav-item hidden-xs" style="display: block;">
+                <a href="/golf">
+                  Golf
+                </a>
+              </li>
+              <li class="nav-item hidden-xs" style="display: block;">
+                <a href="/otros-deportes">
+                  Otros Deportes
+                </a>
+              </li>
+              <li class="nav-item hidden-xs" style="display: block;">
+                <a href="/juegos-centroamericanos-caribe">
+                  Centroamericanos
+                </a>
+              </li>
+              <li class="nav-item hidden-xs" style="display: block;">
+                <a href="/opinion">
+                  Opinión
+                </a>
+              </li>
+
+              <li class="search-mobile hidden-sm hidden-md hidden-lg">
+                <form class="search-block-form" data-drupal-selector="search-block-form" action="/search/node" method="get"
+                  id="search-block-form" accept-charset="UTF-8">
+                  <div class="form-item js-form-item form-type-search js-form-type-search form-item-keys js-form-item-keys form-no-label form-group">
+                    <label for="edit-keys" class="control-label sr-only">Search</label>
+
+
+                    <div class="input-group"><input title="Escriba lo que quiere buscar." data-drupal-selector="edit-keys"
+                        class="form-search form-control" placeholder="Qué deseas buscar" type="search" id="edit-keys"
+                        name="keys" value="" size="15" maxlength="128"><span class="input-group-btn"><button type="submit"
+                          value="Search" class="button js-form-submit form-submit btn-primary btn icon-only" name=""><span
+                            class="sr-only">Search</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></span></div>
+
+
+
+                    <div id="edit-keys--description" class="description help-block">
+                      Escriba lo que quiere buscar.
+                    </div>
+                  </div>
+                  <div class="form-actions form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-actions"
+                    id="edit-actions"></div>
+
+                </form>
+
+              </li>
+
+
+
+              <li class="hidden-sm hidden-md hidden-lg noticias">
+                <a href="/">
+                  NOTICIAS
+                </a>
+              </li>
+
+
+
+              <li class="hidden-sm hidden-md hidden-lg resultados">
+                <a href="/resultados/futbol">
+                  Resultados
+                </a>
+              </li>
+
+
+
+              <li class="hidden-sm hidden-md hidden-lg todos-los-deportes">
+                <a href="/todos-los-deportes">
+                  Todos los deportes
+                  <i class="icon-a2-angle-right" aria-hidden="true"></i>
+                </a>
+              </li>
+
+
+
+              <li class="hidden-sm hidden-md hidden-lg opinión">
+                <a href="/opinion">
+                  Opinión
+                </a>
+              </li>
+
+
+
+              <li class="hidden-sm hidden-md hidden-lg serie-a-italia-2018">
+                <a href="/futbol/serie-a-italia/serie-a-italia-2018">
+                  Serie A Italia 2018
+                </a>
+              </li>
+
+
+              
+
+            </ul>
+
+            <div class="hidden-xs btn-nav">
+              <button id="main-menu">
+                Más <i class="icon-a2-more-vert"></i>
+              </button>
+            </div>
+
+            <div class="hidden-xs btn-search">
+              <button id="searchA2">
+                <i class="icon-a2-search"></i>
+              </button>
+            </div>
+
+
+
+          </div> <!-- navbar-collapse -->
+
+        </div> <!-- container-fluid -->
+        <div class="progressContainer" style="display:none">
+          <div class="progressBar" style="width: 0%;">
+          </div>
+        </div>
+      </nav>
+
+
+    </section>
+
+
+  </div>
+
+</div>

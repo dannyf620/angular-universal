@@ -1,0 +1,44 @@
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 2, "body": "some commentsdfa", "postId": 1 },
+    { "id": 3, "body": "some comment asddsfasdf", "postId": 1 },
+    { "id": 4, "body": "some comment asdfasdf eewr", "postId": 1 }
+  ],
+  "section":[    
+    {"id":"michael-douglas-la-nueva-estrella-en-el-paseo-de-la-fama-de-hollywood","autor":"jsd","obj":{"a":"b"}}
+,    {
+      "id":"noticias",
+      "title":"ESTAMOS EN: noticias"
+    },
+    {
+      "id":"resultados",
+      "title":"ESTAMOS EN: resultados"
+    },
+    {
+      "id":"futbol",
+      "title":"ESTAMOS EN: futbol"
+    },
+    {
+      "id":"ciclismo",
+      "title":"ESTAMOS EN: ciclismo"
+    },
+    {
+      "id":"beisbol",
+      "title":"ESTAMOS EN: beisbol"
+    },
+    {
+      "id":"tenis",
+      "title":"ESTAMOS EN: tenis"
+    },
+    {
+      "id":"motores",
+      "title":"ESTAMOS EN: motores"
+    }
+
+  ],
+  "profile": { "name": "typicode" }
+}
