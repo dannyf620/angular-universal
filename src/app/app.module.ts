@@ -10,6 +10,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeSectionComponent } from './home-section/home-section.component';
 import { ResultadosComponent } from './resultados/resultados.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SharedModule } from './shared/shared/shared.module';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { LastNewComponent } from './last-new/last-new.component';
 
 @NgModule({
   declarations: [
@@ -19,13 +22,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HeaderComponent,
     FooterComponent,
     HomeSectionComponent,
-    ResultadosComponent
+    ResultadosComponent,
+    SidenavComponent,
+    LastNewComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'la-mega'}),
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

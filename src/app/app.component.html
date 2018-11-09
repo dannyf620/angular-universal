@@ -1,3 +1,26 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
+<app-header [menu]="menu" (toggleSidebar)="toggleSidenav()"></app-header>
+
+<mat-sidenav-container fullscreen>
+  <mat-sidenav #sidenav [mode]="'over'" class="sidenav">
+    <app-sidenav [menu]="menu" (onRouteChange)="toggleSidenav()"></app-sidenav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+  <div class="main-content">
+
+      <mat-sidenav-container class="last-news-container" >
+          <mat-sidenav mode="side" opened>
+            <div *ngFor="let i of [1,2,3,4,5]">              
+              <app-last-new></app-last-new>
+            </div>
+          </mat-sidenav>
+          <mat-sidenav-content>
+              <router-outlet></router-outlet>
+          </mat-sidenav-content>
+        </mat-sidenav-container>
+        
+    
+
+  </div>
+</mat-sidenav-content>
+</mat-sidenav-container>
 <app-footer></app-footer>

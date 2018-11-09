@@ -2,6 +2,17 @@
   "posts": [
     { "id": 1, "title": "json-server", "author": "typicode" }
   ],
+  "header":[
+    {"id":1,"text":"Resultados","url":"/resultados"},
+    {"id":2,"text":"Futbol","url":"/futbol"},
+    {"id":3,"text":"Ciclismo","url":"/ciclismo"},
+    {"id":4,"text":"Beisbol","url":"/beisbol"},
+    {"id":5,"text":"Tenis","url":"/tenis"},
+    {"id":6,"text":"Motores","url":"/motores"},
+    {"id":7,"text":"","url":""},
+    {"id":8,"text":"","url":""},
+    {"id":9,"text":"","url":""}
+  ],
   "comments": [
     { "id": 1, "body": "some comment", "postId": 1 },
     { "id": 2, "body": "some commentsdfa", "postId": 1 },
